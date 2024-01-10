@@ -28,6 +28,8 @@
         box-sizing: border-box;
         vertical-align: top;
         margin-left: 8px;
+        margin-bottom: 20px;
+        margin-top: 14px;
 }
 
 .styleit{
@@ -121,4 +123,38 @@ li{
 ul{
     margin:0;
     padding: 0;
+}
+
+
+.buttonThird{
+    color: var(--list-text-subtle) !important;
+    background-color:var(--ds-background-neutral-hovered, #091e4224);
+    border: none;
+    box-shadow: none;
+    border-radius: 8px;
+    cursor: pointer;
+    min-height: 24px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    margin: 0;
+    padding: 6px 0px 6px 0px;
+}
+
+.buttonThird:hover{
+    background-color: var(--ds-background-neutral-hovered, #091e4224);
+    box-shadow: none;
+    border: none;
+    color: var(--ds-text, #172b4d);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.buttonDoing:hover{
+        background-color: var(--ds-background-neutral-hovered, #091e4224);
+        box-shadow: none;
+        border: none;
+        color: var(--ds-text, #172b4d);
+        text-decoration: none;
+        cursor: pointer;
 }

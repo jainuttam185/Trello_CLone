@@ -4,26 +4,41 @@ import './Doing.css';
 
 let nextId = 0;
 
-
-
 const Doing = () => {
   const [name, setName] = useState('');
   const [arrray, setArrray] = useState([]);
+  const [editId, setEditId] = useState(null);
 
   const handleKeyDown = (event) => {
     if (event.key === 'Enter') {
-      // Only add a new artist when Enter key is pressed
-      setArrray([...arrray, { id: nextId++, name: name }]);
-      // Clear the input field after adding an artist
+      if (editId !== null) {
+        setArrray(
+          arrray.map((a) =>
+            a.id === editId ? { ...a, name: name } : a
+          )
+        );
+        setEditId(null); 
+      } else {
+        setArrray([...arrray, { id: nextId++, name: name }]);
+      }
       setName('');
     }
   };
 
   const handleDelete = (id) => {
-    // Filter out the artist with the specified id
-    const updatedArrray = arrray.filter((arrray) => arrray.id !== id);
-    setArrray(updatedArrray);
+    setArrray(
+      arrray.filter((a) => a.id !== id)
+    );
   };
+
+  const handleEdit = (id) => {
+    const artistToEdit = arrray.find((a) => a.id === id);
+    if (artistToEdit) {
+      setEditId(id);
+      setName(artistToEdit.name);
+    }
+  };
+
 
   return (
     <div className='stylefirst'>
@@ -32,19 +47,17 @@ const Doing = () => {
         <button className='buttonSecound'>+</button>
       </div>
       <ul>
-        {arrray.map(artist => (<li key={artist.id}>{artist.name}
-        <button onClick={()=> handleDelete(arrray.id)}>
-        Delete
-        </button>
-        </li>
+        {arrray.map(artist => (
+          <li key={artist.id}>
+            {artist.name}
+            <button onClick={() => handleDelete(artist.id)} className='buttonThird'>Delete</button>
+            <button onClick={() => handleEdit(artist.id)} className='buttonThird'>Edit</button>
+          </li>
         ))}
       </ul>
-      <input className="inputElement" type="text" value={name} onChange={e => setName(e.target.value)}
+      <input placeholder="+ Add a New Card" className="buttonDoing" type="text" value={name} onChange={e => setName(e.target.value)}
         onKeyDown={handleKeyDown}
-        
-        >
-      </input>
-      <button className='buttonAddnewcard'>+  Add a Card</button>
+      />
     </div>
   );
 }

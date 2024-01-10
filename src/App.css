@@ -1,3 +1,5 @@
+
+
 .App {
   text-align: center;
 }
@@ -6,6 +8,7 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  height: fit-content;
 }
 
 .App-logo {
@@ -46,4 +49,14 @@
 .header{
   background-color: #CD519D;
   margin-top: 0;
+  margin-bottom: 0;
+}
+
+.doingstyle{
+  margin-bottom: 20px;
+}
+
+.body-container{
+  display:grid;
+  grid-template-columns: 1fr 5fr;
 }

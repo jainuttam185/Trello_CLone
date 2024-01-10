@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+.navbar {
+    display: flex;
+    justify-content: flex-start;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    height: 30px;
+    align-items: center;
+    font-size: 14px;
+    font-family: sans-serif;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.navbar li {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar a:hover {
+    background-color: #555;
+}
+
+i {
+    height: 10px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-button {
+    background-color: transparent;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.Createbutton{
+  color:#ffff;
+  border-radius: 8px;
+  height: 25px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.Createsearch{
+    color:#ffff;
+    border-radius: 8px;
+    height: 25px;
+    background-color: rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+  }
+
+.topmost{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    border-bottom: 2px solid #555;
+}
+
+.faright{
+  display:flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  gap:10px;
+}
+
+.icons{
+    color: white;
+}
