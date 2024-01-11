@@ -46,6 +46,7 @@ const Header = () => {
                 <input type='search' className='Createsearch' placeholder='Search'></input>
                 <a href="#home"><i className="fa-solid fa-bell icons"></i></a>
                 <a href="#home"><i class="fa-solid fa-question icons"></i></a>
+                <a href="#home"><i class="fa-brands fa-product-hunt"></i></a>
                 </div>
             </div>
         </div>

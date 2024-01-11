@@ -17,8 +17,8 @@ const SideBar = () => {
                 </div>
                 <p className='line'>Workspace views</p>
                 <div className='secoundelement'>
-                    <a href="#"><i class="fa-solid fa-table"></i><p className='boards'>Table</p></a>
-                    <a href="#"><i class="fa-solid fa-calendar-days"></i><p className='boards'>Calender</p></a>
+                    <a href="#"><i class="fa-solid fa-table"></i><p className='boards'><i>Table</i></p></a>
+                    <a href="#"><i class="fa-solid fa-calendar-days"></i><p className='boards'><i>Calender</i></p></a>
                 </div>
             </div>
         </div>

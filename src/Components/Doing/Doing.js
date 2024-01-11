@@ -44,14 +44,16 @@ const Doing = () => {
     <div className='stylefirst'>
       <div className='styleit'>
         <input className="buttonDoing" type="text" placeholder="Doing"></input>
-        <button className='buttonSecound'>+</button>
+        <button className='buttonSecound'><i class="fa-solid fa-ellipsis"></i></button>
       </div>
       <ul>
         {arrray.map(artist => (
-          <li key={artist.id}>
+          <li style={{display:"flex", justifyContent:"space-between", alignItems:"center"}} key={artist.id}>
             {artist.name}
-            <button onClick={() => handleDelete(artist.id)} className='buttonThird'>Delete</button>
-            <button onClick={() => handleEdit(artist.id)} className='buttonThird'>Edit</button>
+            <div classname="EditDelete">
+            <button onClick={() => handleEdit(artist.id)} className='buttonThird'><i class="fa-regular fa-pen-to-square"></i></button>
+            <button style={{marginLeft:"10px"}} onClick={() => handleDelete(artist.id)} className='buttonThird'><i class="fa-solid fa-trash"></i></button>
+            </div>
           </li>
         ))}
       </ul>

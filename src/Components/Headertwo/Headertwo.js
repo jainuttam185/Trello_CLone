@@ -23,6 +23,7 @@ const Headertwo = () => {
                 <a href="#home"><i class="fa-solid fa-rocket"></i></a>
                 <a href="#home"><i class="fa-solid fa-bolt"></i></a>
                 <button className='Createbutton'><i class="fa-solid fa-filter"></i> Filters</button>
+                <a href="#home"><i class="fa-brands fa-product-hunt"></i></a>
                 </div>
             </div>
         </div>
