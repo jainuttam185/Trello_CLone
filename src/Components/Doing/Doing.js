@@ -4,7 +4,7 @@ import './Doing.css';
 
 let nextId = 0;
 
-const Doing = () => {
+const Doing = ({title}) => {
   const [name, setName] = useState('');
   const [arrray, setArrray] = useState([]);
   const [editId, setEditId] = useState(null);
@@ -43,7 +43,7 @@ const Doing = () => {
   return (
     <div className='stylefirst'>
       <div className='styleit'>
-        <input className="buttonDoing" type="text" placeholder="Doing"></input>
+        <input className="buttonDoing" type="text" placeholder="Doing" value={title}></input>
         <button className='buttonSecound'><i class="fa-solid fa-ellipsis"></i></button>
       </div>
       <ul>

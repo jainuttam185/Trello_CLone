@@ -1,14 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './SideBar.css';
 
-const SideBar = () => {
+const SideBar = ({onSelect}) => {
     return (
         <div>
             <div class="vnavbar">
                 <div class="firstelement">
                     <button className='capital'>T</button>
                     <a href="#">Trello Workspace</a>
-                    <button className='open'><i class="fa-solid fa-right-to-bracket"></i></button>
+                    <button className='open' onClick={()=>{onSelect(false)}}><i class="fa-solid fa-arrow-left"></i></button>
                 </div>
                 <div className='secoundelement'>
                     <a href="#"><i class="fa-brands fa-trello"></i><p className='boards'>Boards</p></a>
