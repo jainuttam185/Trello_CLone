@@ -1,0 +1,160 @@
+.stylefirst {
+        font-size:14px;
+        --list-background: var(--tr-background-list, #ebecf0);
+        --list-text: var(--ds-text, #172b4d);
+        --list-text-subtle: var(--ds-text-subtle, #44546f);
+        --list-text-subtlest: var(--ds-text-subtlest, #626f86);
+        background-color: var(--list-background);
+        border-radius: 12px;
+        border: none;
+        box-shadow: var(--ds-shadow-raised, 0px 1px 1px #091e4240, 0px 0px 1px #091e424f);
+        color: var(--list-text-subtle);
+        display: flex;
+        justify-content: space-between;
+        max-height: 100%;
+        flex-direction: column;
+        flex-grow: 0;
+        flex-shrink: 0;
+        flex-basis: 272px;
+        align-self: start;
+        padding-bottom: 8px;
+        padding-top: 8px;
+        padding-left: 8px;
+        padding-right: 8px;
+        position: relative;
+        scroll-margin: 8px;
+        white-space: normal;
+        width: 272px;
+        box-sizing: border-box;
+        vertical-align: top;
+        margin-left: 8px;
+        margin-bottom: 20px;
+        margin-top: 14px;
+}
+
+.styleit{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.buttonAddnewcard{
+    background-color: transparent;
+    border-radius: 8px;
+    border:none;
+    color: var(--list-text-subtle);
+    padding: 6px 12px 6px 0px;
+    text-decoration: none;
+    -webkit-user-select: none;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-grow: 1;
+    margin: 0;
+    min-height: 24px;
+}
+
+.buttonAddnewcard:hover {
+    background-color: var(--ds-background-neutral-hovered, #091e4224);
+    box-shadow: none;
+    border: none;
+    color: var(--ds-text, #172b4d);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.buttonDoing {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    margin: 0;
+    padding: 6px 0px 6px 0px;
+    background-color: transparent;
+    white-space: normal;
+    cursor: pointer;
+    z-index: 0;
+    border: none;
+    border-radius: 8px;
+    min-height: 24px;
+}
+
+.buttonDoing:focus{
+   background-color: white;
+   outline-color: blue;
+}
+
+.buttonSecound{
+    color: var(--list-text-subtle) !important;
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    border-radius: 8px;
+    cursor: pointer;
+    min-height: 24px;
+}
+
+.buttonSecound:hover{
+    background-color: var(--ds-background-neutral-hovered, #091e4224);
+    box-shadow: none;
+    border: none;
+    color: var(--ds-text, #172b4d);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.inputElement{
+    padding: 8px 12px 4px;
+    min-height: 24px;
+}
+
+li{
+    display: flow-root;
+    position: relative;
+    padding: 8px 12px 4px;
+    min-height: 24px;
+    z-index: 10;
+    background-color: white;
+    margin-bottom: 4px;
+    border-radius: 8px;
+}
+
+ul{
+    margin:0;
+    padding: 0;
+}
+
+
+.buttonThird{
+    color: var(--list-text-subtle) !important;
+    background-color:transparent;
+    border: none;
+    box-shadow: none;
+    border-radius: 8px;
+    cursor: pointer;
+    min-height: 24px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    margin: 0;
+    padding: 7px 5px 7px 5px;
+}
+
+.buttonThird:hover{
+    background-color: var(--ds-background-neutral-hovered, #091e4224);
+    box-shadow: none;
+    border: none;
+    color: var(--ds-text, #172b4d);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.buttonDoing:hover{
+        background-color: var(--ds-background-neutral-hovered, #091e4224);
+        box-shadow: none;
+        border: none;
+        color: var(--ds-text, #172b4d);
+        text-decoration: none;
+        cursor: pointer;
+}
