@@ -1,6 +1,4 @@
 const mongoose=require('mongoose');
-const validator=require('validator');
-const lists=require('./taskModels');
 
 const cardsSchema = new mongoose.Schema({
     name:{
