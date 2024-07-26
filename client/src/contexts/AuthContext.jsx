@@ -25,7 +25,7 @@ export const AuthProvider = ({children}) => {
     useEffect(()=>{
       async function fetchData()
     {
-      const res=await fetch('http://localhost:8000/trello/refresh',{
+      const res=await fetch('https://trello-clone-9ydq.onrender.com/trello/refresh',{
         method:'PATCH',
         headers:{
           'Content-Type':'application/json',
@@ -53,7 +53,7 @@ export const AuthProvider = ({children}) => {
         setIsAuthenticated(null);
           const res=await axios({
             method:'GET',
-            url:'http://localhost:8000/trello/logout',
+            url:'https://trello-clone-9ydq.onrender.com/trello/logout',
             withCredentials: true,
             headers:{
               'Content-Type':'application/json',

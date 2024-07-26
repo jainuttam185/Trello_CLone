@@ -13,7 +13,7 @@ const Doing = ({title,eachCardId}) => {
   useEffect(()=>{
     async function fetchData()
     {
-      const res2=await fetch(`http://localhost:8000/workspace/card/${eachCardId}`,{
+      const res2=await fetch(`https://trello-clone-9ydq.onrender.com/workspace/card/${eachCardId}`,{
         method:'GET',
         headers:{
           'Content-Type':'application/json',
@@ -37,7 +37,7 @@ const Doing = ({title,eachCardId}) => {
         );
         setEditId(null); 
       } else {
-        const res=await fetch('http://localhost:8000/workspace/list/',{
+        const res=await fetch('https://trello-clone-9ydq.onrender.com/workspace/list/',{
           method:'POST',
           headers:{
             'Content-Type':'application/json',

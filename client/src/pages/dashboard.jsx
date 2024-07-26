@@ -22,7 +22,7 @@ const Dashboard = () => {
   const [allWrkSpaces, setAllWrkSpaces] = useState([]);
 
   const handleNewWrkSpace = async () => {
-    const res = await fetch("http://localhost:8000/workspace/", {
+    const res = await fetch("https://trello-clone-9ydq.onrender.com/workspace/", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -31,7 +31,7 @@ const Dashboard = () => {
     });
     const { data, status } = await res.json();
 
-    const res2 = await fetch("http://localhost:8000/workspace/", {
+    const res2 = await fetch("https://trello-clone-9ydq.onrender.com/workspace/", {
       method: "PATCH",
       headers: {
         "Content-Type": "application/json",
@@ -60,7 +60,7 @@ const Dashboard = () => {
 
   useEffect(() => {
     async function fetchData() {
-      const res = await fetch("http://localhost:8000/trello/refresh", {
+      const res = await fetch("https://trello-clone-9ydq.onrender.com/trello/refresh", {
         method: "PATCH",
         headers: {
           "Content-Type": "application/json",
@@ -78,7 +78,7 @@ const Dashboard = () => {
         message.error("Registration failed");
       }
       const res2 = await fetch(
-        `http://localhost:8000/workspace/${data.user._id}`,
+        `https://trello-clone-9ydq.onrender.com/workspace/${data.user._id}`,
         {
           method: "GET",
           headers: {

@@ -20,7 +20,7 @@ function Trello() {
     useEffect(()=>{
         async function fetchData()
         {
-          const res=await fetch('http://localhost:8000/trello/refresh',{
+          const res=await fetch('https://trello-clone-9ydq.onrender.com/trello/refresh',{
             method:'PATCH',
             headers:{
               'Content-Type':'application/json',
@@ -33,7 +33,7 @@ function Trello() {
           }else {
              message.error('Registration failed');
           }
-          const res2=await fetch(`http://localhost:8000/workspace/wrk/${id}`,{
+          const res2=await fetch(`https://trello-clone-9ydq.onrender.com/workspace/wrk/${id}`,{
             method:'GET',
             headers:{
               'Content-Type':'application/json',

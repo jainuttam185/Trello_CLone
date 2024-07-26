@@ -11,7 +11,7 @@ const AddAnotherList = ({setArrray,arrray}) => {
 
     const handleKeyDown = async (event) => {
         if (event.key === 'Enter') {
-            const res=await fetch('http://localhost:8000/workspace/card/',{
+            const res=await fetch('https://trello-clone-9ydq.onrender.com/workspace/card/',{
                 method:'POST',
                 headers:{
                   'Content-Type':'application/json',

@@ -6,7 +6,7 @@ const useSignup = () => {
     
     const registerUser=async(values)=>{
     try{
-        const res=await fetch('http://localhost:8000/trello/signup',{
+        const res=await fetch('https://trello-clone-9ydq.onrender.com/trello/signup',{
            method:'POST',
            credentials: 'include',
            headers:{
