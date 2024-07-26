@@ -6,7 +6,7 @@ const userRouter=require('./routes/userRoutes');
 const wrkSpaceRouter=require('./routes/wrkSpaceRoutes');
 const cors=require('cors');
 
-app.use(cors({credentials:true, origin: "https://uttamtrelloboard.netlify.app/"}));
+app.use(cors({credentials:true, origin: "https://uttamtrelloboard.netlify.app"}));
 app.use(morgan('dev'));
 app.use(express.json());
 app.use(cookieParser());
